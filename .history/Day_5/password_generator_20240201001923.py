@@ -27,4 +27,4 @@ print(f"Here is your easy password: {easy_password}")
 #e.g. 4 letter, 2 symbol, 2 number = g^2jk8&P
 hard_password = list(easy_password)
 random.shuffle(hard_password)
-print(f"Here is your hard password:{''.join(hard_password)}")
+print(f"Here is your hard password:")
