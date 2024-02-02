@@ -1,0 +1,2 @@
+***Note of Day 6***
+In day 6 I did some exercise on a website called "Reeborg's World". On that site I practiced on my conditional, loops, and functions while trying to complete some obstacle and maze puzzles.
