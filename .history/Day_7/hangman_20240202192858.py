@@ -9,10 +9,9 @@ THINGS TO DO:
 8. Add a way to show the letters that have been guessed.
 9. Create a executable file.
 10. Create a GUI.
-11. Draw the hangman.
 """
-from hangman_art import logo, stages
 from random_word import RandomWords
+from hangman_art import logo, stages
 import random
 import os
 import time
@@ -75,7 +74,6 @@ def game_logic(display, rand_word, lives):
          lives -= 1  # Decrement lives if the guess is wrong
          if lives == 0:
                print("You lose!")
-               print(stages[0])
                print(f"The word was {rand_word}.")  # Reveal the word at the end
                time.sleep(5)
                return  # Exit the function, the game is over
@@ -89,7 +87,9 @@ def game_logic(display, rand_word, lives):
    
 def main():
    clear_screen()
+   print("=====================")
    print(logo)
+   print("=====================")
    difficulty, lives = difficulty_setting()
    print(f"You have {lives} lives!")
    rand_word = random_word(difficulty)

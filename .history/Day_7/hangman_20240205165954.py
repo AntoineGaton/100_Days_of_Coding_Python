@@ -9,7 +9,6 @@ THINGS TO DO:
 8. Add a way to show the letters that have been guessed.
 9. Create a executable file.
 10. Create a GUI.
-11. Draw the hangman.
 """
 from hangman_art import logo, stages
 from random_word import RandomWords
