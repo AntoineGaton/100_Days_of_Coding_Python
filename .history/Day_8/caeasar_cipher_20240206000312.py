@@ -33,6 +33,3 @@ def main():
       if restart == "no":
          should_end = True
          print("Goodbye")
-         
-if __name__ == "__main__":
-   main()

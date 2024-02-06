@@ -34,5 +34,4 @@ def main():
          should_end = True
          print("Goodbye")
          
-if __name__ == "__main__":
-   main()
+if 

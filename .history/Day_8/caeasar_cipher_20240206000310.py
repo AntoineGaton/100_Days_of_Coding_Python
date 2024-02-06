@@ -8,7 +8,7 @@ def print_logo():
 def caesar(start_text, shift_amount, cipher_direction):
   end_text = ""
   if cipher_direction == "decode":
-    shift_amount *= -1 
+    shift_amount *= -1 //
   for char in start_text:
     if char in alphabet:
       position = alphabet.index(char)
@@ -33,6 +33,3 @@ def main():
       if restart == "no":
          should_end = True
          print("Goodbye")
-         
-if __name__ == "__main__":
-   main()

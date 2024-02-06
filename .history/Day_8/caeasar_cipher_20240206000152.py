@@ -8,7 +8,7 @@ def print_logo():
 def caesar(start_text, shift_amount, cipher_direction):
   end_text = ""
   if cipher_direction == "decode":
-    shift_amount *= -1 
+    shift_amount *= -1
   for char in start_text:
     if char in alphabet:
       position = alphabet.index(char)
@@ -19,12 +19,15 @@ def caesar(start_text, shift_amount, cipher_direction):
   print(f"Here's the {cipher_direction}d result: {end_text}")
 
 def main():
-   print_logo()
    should_end = False
    while not should_end:
       direction = input("Type 'encode' to encrypt, type 'decode' to decrypt:\n")
       text = input("Type your message:\n").lower()
       shift = int(input("Type the shift number:\n"))
+      #TODO-2: What if the user enters a shift that is greater than the number of letters in the alphabet?
+      #Try running the program and entering a shift number of 45.
+      #Add some code so that the program continues to work even if the user enters a shift number greater than 26. 
+      #Hint: Think about how you can use the modulus (%).
       shift = shift % 26
 
       caesar(start_text=text, shift_amount=shift, cipher_direction=direction)
@@ -33,6 +36,3 @@ def main():
       if restart == "no":
          should_end = True
          print("Goodbye")
-         
-if __name__ == "__main__":
-   main()
