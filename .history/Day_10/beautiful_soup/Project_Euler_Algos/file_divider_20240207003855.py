@@ -1,0 +1,15 @@
+divide = "======================================================================================================================================================"
+count = 0
+# Open the source file in read mode
+with open('project_euler_algos.txt', 'r', encoding='utf-8') as source:
+    # Open the destination file in write mode
+    with open('destination_file.txt', 'w', encoding='utf-8') as destination:
+        # Iterate over each line in the source file, with line enumeration starting at 1
+        for i, line in enumerate(source, start=1):
+            destination.write(line)
+            if line == divide:
+               count += 1
+               print()
+            if count == 2:
+                break
+
