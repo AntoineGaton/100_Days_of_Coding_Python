@@ -1,3 +1,8 @@
+"""
+To Do:
+1. FIX WHILE LOOP! MADE 2000 FILES. 
+"""
+
 import os
 separator = "======================================================================================================================================================"
 page = 0
@@ -28,6 +33,7 @@ while not is_empty:
    
    page += 1
    
-   is_empty = is_file_empty(file_path)
+   is
+   
 
 os.remove("project_euler_algos.txt")

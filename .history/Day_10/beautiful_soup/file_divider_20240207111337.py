@@ -29,5 +29,6 @@ while not is_empty:
    page += 1
    
    is_empty = is_file_empty(file_path)
+   
 
 os.remove("project_euler_algos.txt")
